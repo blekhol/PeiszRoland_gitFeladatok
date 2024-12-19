@@ -11,12 +11,7 @@ namespace iskola
 
         static void Main(string[] args)
         {
-            int[] asd = new int[20];
-            for (int i = 0; i < asd.Length; i++)
-            {
-                asd[i] = i;
-            }
-            f01(asd);
+            
 
             Console.ReadKey();
         }
@@ -70,6 +65,19 @@ namespace iskola
             }
 
             return paratlanok;
+        }
+
+        static void f05(int[] har)
+        {
+            Console.WriteLine($"Ennyi darab PÁROS szám van a tömbben: {f02(har)}");
+            Console.WriteLine($"A tömb elemeinek átlaga: {f03(har)}");
+            Console.WriteLine("A tömbből alkotott páratlan számok: ");
+
+            foreach(int i in f04(har))
+            {
+                Console.Write(i + "; ");
+            }
+            Console.WriteLine();
         }
     }
 }
