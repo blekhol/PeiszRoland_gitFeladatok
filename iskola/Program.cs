@@ -38,5 +38,17 @@ namespace iskola
 
             return szamlalo;
         }
+
+        static double f03(int[] har) 
+        {
+            double atl = 0;
+            for(int i = 0;i < har.Length; i++)
+            {
+                atl += har[i];
+            }
+            atl = atl / har.Length;
+
+            return atl;
+        }
     }
 }
