@@ -10,7 +10,8 @@ namespace iskola
 
         static void Main(string[] args)
         {
-            f01();
+            int[] asd = { 1, 2, 3 , 4, 5};
+            f01(asd);
 
             //Console.ReadKey();
         }
