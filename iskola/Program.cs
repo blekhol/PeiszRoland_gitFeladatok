@@ -24,5 +24,19 @@ namespace iskola
                 har[i] += random.Next(1,51);
             }
         }
+
+        static int f02(int[] har)
+        {
+            int szamlalo = 0;
+            for (int i = 0; i < har.Length; i++) 
+            {
+                if(har[i] % 2 == 0)
+                {
+                    szamlalo++;
+                }
+            }
+
+            return szamlalo;
+        }
     }
 }
